@@ -1,0 +1,25 @@
+version: "2"
+
+services:
+  frontend:
+    container_name: "spotifydj"
+    build: .
+    environment:
+      env_file: .env
+      NODE_ENV: production
+    ports:
+      - '8080:8080'
+    volumes:
+      - .:/usr/src/app
+  backend:
+    container_name: "spotifydjnode"
+    build: .
+    ports:
+      - '8000:8000'
+    volumes:
+      - .:/usr/src/app/server
+
+networks:
+  default:
+    external:
+      name: spotifydj
