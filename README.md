@@ -7,12 +7,6 @@ I provided two micro services applications to handle back-end and front-end of t
 
 
 
-<p><details>
-  Project Structure:    
-  <p><img src="./docs/structure.png" alt="structure of the store system" /></p>
-</details></p>
-
-
 ## Dependencies
 
 <p><details>
