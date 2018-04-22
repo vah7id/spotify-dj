@@ -3,7 +3,7 @@
 > The goal of this application is to find create a 2 deck player Spotify DJ set. You need to be able to “mix” two tracks, by keeping two separate playlists. Use the Spotify Web API to do this: https://developer.spotify.com/web-api/ It supports cross-origin requests.     
 
 
-I provided two micro services applications to handle back-end and front-end of this project. Back-end is just and express simple app due access and connect to spotify API's and assets.    
+I provided two micro services applications to handle back-end and front-end of this project. Back-end is just an express simple node.js app due access and connect to spotify API's and assets.    
 
 
 
