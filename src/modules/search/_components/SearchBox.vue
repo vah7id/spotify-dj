@@ -42,7 +42,7 @@ export default {
       });
     },
     querySearch(queryString, cb) {
-      if (queryString.length > 2) {
+      if (queryString.length > 2 && this.query !== queryString) {
         this.$store.dispatch('$_search/getTracks', queryString).then((tracks) => {
           this.suggestions = tracks;
           this.query = queryString;

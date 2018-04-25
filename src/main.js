@@ -7,7 +7,7 @@ import App from './App';
 import router from './router';
 import store from './store';
 
-Vue.config.productionTip = true;
+Vue.config.productionTip = false;
 
 Vue.use(ElementUI);
 

@@ -7,19 +7,21 @@ services:
     environment:
       env_file: .env
       NODE_ENV: production
+      PORT: 8080
+    expose:
+      - '8080'
     ports:
       - '8080:8080'
     volumes:
       - .:/usr/src/app
   backend:
     container_name: "spotifydjnode"
-    build: .
+    build:
+      context: ./server
+      dockerfile: Dockerfile-node
+    expose:
+      - '8000'
     ports:
       - '8000:8000'
     volumes:
       - .:/usr/src/app/server
-
-networks:
-  default:
-    external:
-      name: spotifydj

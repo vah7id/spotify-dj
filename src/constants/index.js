@@ -1,5 +1,5 @@
 /* =================== Configs ========================= */
-export const API_URL = 'http://127.0.0.1:8000/api';
+export const API_URL = 'http://127.0.0.1:8000';
 export const API_URL_AUTHORIZE = 'https://accounts.spotify.com/authorize/';
 export const SPOTIFY_CLIENT_ID = '1a13de40757f4defa6c91a7936f1cbfd';
 export const SPOTIFY_CLIENT_SECRET = 'b6145b717a9f46a5a8928449181651c8';

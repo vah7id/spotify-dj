@@ -21,11 +21,11 @@ var port = process.env.PORT || 8000;
 
 var router = express.Router();             
 
-router.get('/', function(req, res) {
+app.get('/', function(req, res) {
     res.json({ message: 'hooray! welcome to spotify api!' });   
 });
 
-router.get('/search', function(req, res) {
+app.get('/search', function(req, res) {
 
 	request({
 	  uri: 'https://api.spotify.com/v1/search?q='+req.query.q+'&type=track',
@@ -40,7 +40,7 @@ router.get('/search', function(req, res) {
 
 });
 
-router.post('/getAccessToken', function(req, res) {
+app.post('/getAccessToken', function(req, res) {
 
 	request({
 	  uri: GET_TOKEN_URL,
@@ -57,8 +57,6 @@ router.post('/getAccessToken', function(req, res) {
 	});
 });
 
-
-app.use('/api', router);
 
 
 // START THE SERVER
